@@ -19,7 +19,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: iransas !important;
-    background-color: black;
+    background-color: black !important;
 
     ::-webkit-scrollbar, body ::-webkit-scrollbar {
       width: 0px;
@@ -33,7 +33,24 @@ html, body {
 /********* first con **********/
 #--mainPicCon {
     background: $gradient__purpleToBlackInfinite;
-    height: 100vh;
+    // height: 100%;
+    padding-top: 100px;
+}
+
+@media only screen and (max-width: 770px) {
+  #--h1FirstCon {
+    position: absolute;
+  }
+
+  #--mainPicCon {
+    background: #000000;
+    padding-top: 10px;
+  }
+
+  #--mainImgCon {
+    margin-top: 100px !important;
+  }
+
 }
 
 #--h1FirstCon {
@@ -41,6 +58,7 @@ html, body {
     font-size: 52px;
     font-weight: bolder;
     background: $gradient__purpleBlack__text;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 5px;
@@ -253,7 +271,24 @@ html, body {
 
 
 /********* services con **********/
-#--servicesRowCon {
-    // background-color: #00d1e0 !important;
+.--servicesEachCon {
     box-shadow: inset 0 0 10px $main__purple;
+    text-align: justify;
+}
+
+
+// temp
+.--typing-effect::after {
+  content: "|";
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
 }
