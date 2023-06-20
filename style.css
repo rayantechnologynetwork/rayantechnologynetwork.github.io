@@ -9,6 +9,11 @@ html, body {
   padding: 0;
   font-family: iransas !important;
   background-color: black; }
+  html ::-webkit-scrollbar, html body ::-webkit-scrollbar, body ::-webkit-scrollbar, body body ::-webkit-scrollbar {
+    width: 0px;
+    background: black; }
+  html ::-webkit-scrollbar-thumb, html body ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb, body body ::-webkit-scrollbar-thumb {
+    border-radius: 15px; }
 
 /********* first con **********/
 #--mainPicCon {
@@ -142,5 +147,8 @@ html, body {
     opacity: 0.7; }
   100% {
     opacity: 1; } }
+/********* services con **********/
+#--servicesRowCon {
+  box-shadow: inset 0 0 10px #8E2DE2; }
 
 /*# sourceMappingURL=style.css.map */
