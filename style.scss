@@ -276,8 +276,6 @@ html, body {
     text-align: justify;
 }
 
-
-// temp
 .--typing-effect::after {
   content: "|";
   animation: blink-caret 0.75s step-end infinite;
@@ -291,4 +289,21 @@ html, body {
   50% {
     color: white;
   }
+}
+
+/********* why us **********/
+#--otherComp {
+  box-shadow: inset 0 0 10px $main__purple;
+}
+
+#--otherComp p {
+  background: $main__purple !important;
+}
+
+#--ourComp {
+  background: $main__purple !important;
+}
+
+#--ourComp p {
+  border: 3px solid $main__purple;
 }

@@ -173,5 +173,17 @@ html, body {
     color: transparent; }
   50% {
     color: white; } }
+/********* why us **********/
+#--otherComp {
+  box-shadow: inset 0 0 10px #8E2DE2; }
+
+#--otherComp p {
+  background: #8E2DE2 !important; }
+
+#--ourComp {
+  background: #8E2DE2 !important; }
+
+#--ourComp p {
+  border: 3px solid #8E2DE2; }
 
 /*# sourceMappingURL=style.css.map */
