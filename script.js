@@ -82,30 +82,7 @@ typingEffect1();
 
 
 /********** carousel in our work section ************/
-// Wait for the DOM to be fully loaded
-document.addEventListener("DOMContentLoaded", function () {
-  // Array of text to be displayed
-  const textArray = [
-    "Text Goes Here",
-    "Another Text Example",
-    "More Text to Slide",
-  ];
-  
-  const slideTextElement = document.getElementById("slideText");
-  let currentIndex = 0;
 
-  // Function to update the text
-  function updateText() {
-    slideTextElement.textContent = textArray[currentIndex];
-    currentIndex = (currentIndex + 1) % textArray.length;
-  }
-
-  // Initial text update
-  updateText();
-
-  // Listen for animation end event and update the text
-  slideTextElement.addEventListener("animationend", updateText);
-});
 
 
 
