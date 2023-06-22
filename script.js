@@ -81,8 +81,6 @@ const typingEffect1 = () => {
 typingEffect1();
 
 
-/********** carousel in our work section ************/
-
 
 
 

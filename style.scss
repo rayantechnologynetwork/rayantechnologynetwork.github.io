@@ -20,6 +20,7 @@ html, body {
     padding: 0;
     font-family: iransas !important;
     background-color: black !important;
+    overflow-x: hidden;
 
     ::-webkit-scrollbar, body ::-webkit-scrollbar {
       width: 0px;
@@ -97,11 +98,6 @@ html, body {
 }
   
 .glowing-txt {
-    -webkit-text-shadow: 0 0 0.125em hsla(0, 100%, 50%, 0.3),
-      0 0 0.45em var(--glow-color);
-    -moz-text-shadow: 0 0 0.125em hsla(0, 100%, 42%, 0.3),
-      0 0 0.45em var(--glow-color);
-    text-shadow: 0 0 0.125em hsla(0, 100%, 38%, 0.3), 0 0 0.45em var(--glow-color);
     animation: text-flicker 3s linear infinite;
 }
   
@@ -119,7 +115,7 @@ html, body {
     right: 0;
     opacity: 0.7;
     filter: blur(1em);
-    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    transform: translateY(120%) rotateX(5deg) scale(1, 0.35);
     background: var(--glow-color);
     pointer-events: none;
 }
@@ -290,6 +286,53 @@ html, body {
   color: $main__purple;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 90% !important;
+  margin: 100px auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .slider {
+    width: 100% !important;
+  }
+}
+
+.slick-dots li button:before{
+  background-color: $main__purple;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: $main__purple !important;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
 
 /********* contact us **********/
 #--contactUsCon {
@@ -300,4 +343,6 @@ html, body {
 #--contactUsMainTitle, #--contactUsInfoCon {
   background-color: $main__black;
 }
+
+
 
