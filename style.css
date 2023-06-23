@@ -16,6 +16,17 @@ html, body {
   html ::-webkit-scrollbar-thumb, html body ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb, body body ::-webkit-scrollbar-thumb {
     border-radius: 15px; }
 
+/********* header - indicator **********/
+#--indicator-con {
+  background-color: transparent;
+  height: 5px;
+  width: 100%; }
+
+#--indicatorItSelf {
+  background-color: #8E2DE2;
+  height: 5px;
+  width: 0%; }
+
 /********* first con **********/
 #--mainPicCon {
   background: -webkit-linear-gradient(#4B0082, #000000, black, black, black, black, black);
@@ -229,6 +240,37 @@ html, body {
 .slick-current {
   opacity: 1; }
 
+/********* packages **********/
+.--packagesEachCon1, .--packagesEachCon2, .--packagesEachCon3 {
+  animation: boxShadower 2s ease-in-out infinite; }
+
+@keyframes boxShadower {
+  0% {
+    box-shadow: -1px -1px 20px 10px black; }
+  50% {
+    box-shadow: -1px -1px 20px 10px #111111; }
+  100% {
+    box-shadow: -1px -1px 20px 10px black; } }
+.--packagesEachCon1 {
+  background-color: #902ad8; }
+
+.--packagesEachCon2 {
+  background-color: rgba(95, 18, 150, 0.514); }
+
+.--packagesEachCon3 {
+  background-color: rgba(76, 0, 130, 0.267); }
+
+.--moreInfoCons {
+  cursor: pointer; }
+
+.rotate1 {
+  transform: rotate(0deg);
+  transition: transform 0.3s; }
+
+.rotate2 {
+  transform: rotate(90deg);
+  transition: transform 0.3s; }
+
 /********* contact us **********/
 #--contactUsCon {
   background-color: #8E2DE2;
@@ -236,5 +278,26 @@ html, body {
 
 #--contactUsMainTitle, #--contactUsInfoCon {
   background-color: #000000; }
+
+.--onHover-- {
+  transition: all 1s;
+  transform: scale(1); }
+
+.--onHover--:hover {
+  transform: scale(1.1); }
+
+.--onHover1-- {
+  transition: all 1s;
+  transform: scale(1); }
+
+.--onHover1--:hover {
+  transform: scale(0.9); }
+
+.--onHover2-- {
+  transition: all 1s;
+  margin-top: 0px; }
+
+.--onHover2--:hover {
+  margin-top: 50px; }
 
 /*# sourceMappingURL=style.css.map */

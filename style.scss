@@ -1,4 +1,5 @@
 $main__purple: #8E2DE2;
+$sec_purple: #380f5c;
 $main__black: #000000;
 $gradient__purpleToBlackInfinite: -webkit-linear-gradient(#4B0082, #000000, black, black, black, black, black);
 $gradient__purpleBlack__text: -webkit-linear-gradient(#8E2DE2, #4A00E0);
@@ -30,6 +31,22 @@ html, body {
       border-radius: 15px;
     }
 }
+
+
+/********* header - indicator **********/
+#--indicator-con {
+  background-color: transparent;
+  height: 5px;
+  width: 100%;
+}
+
+#--indicatorItSelf {
+  background-color: $main__purple;
+  height: 5px;
+  width: 0%;
+}
+
+
 
 /********* first con **********/
 #--mainPicCon {
@@ -334,6 +351,49 @@ html, body {
 }
 
 
+/********* packages **********/
+.--packagesEachCon1, .--packagesEachCon2, .--packagesEachCon3 {
+  animation: boxShadower 2s ease-in-out infinite;
+}
+
+@keyframes boxShadower {
+  0% {
+    box-shadow: -1px -1px 20px 10px rgb(0, 0, 0);
+  }
+  50% {
+    box-shadow: -1px -1px 20px 10px rgb(17, 17, 17);
+  }
+  100% {
+    box-shadow: -1px -1px 20px 10px rgb(0, 0, 0);
+  }
+}
+
+.--packagesEachCon1 {
+  background-color: rgb(144, 42, 216);
+}
+
+.--packagesEachCon2 {
+  background-color: rgba(95, 18, 150, 0.514);
+}
+
+.--packagesEachCon3 {
+  background-color: rgba(76, 0, 130, 0.267);
+}
+
+.--moreInfoCons {
+  cursor: pointer;
+}
+
+.rotate1 {
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+.rotate2 {
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+
 /********* contact us **********/
 #--contactUsCon {
   background-color: $main__purple;
@@ -345,4 +405,32 @@ html, body {
 }
 
 
+
+// Global //
+.--onHover-- {
+  transition: all 1s;
+  transform: scale(1);
+}
+
+.--onHover--:hover {
+  transform: scale(1.1);
+}
+
+.--onHover1-- {
+  transition: all 1s;
+  transform: scale(1);
+}
+
+.--onHover1--:hover {
+  transform: scale(0.9);
+}
+
+.--onHover2-- {
+  transition: all 1s;
+  margin-top: 0px;
+}
+
+.--onHover2--:hover {
+  margin-top: 50px;
+}
 

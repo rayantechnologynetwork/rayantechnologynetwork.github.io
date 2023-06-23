@@ -13,11 +13,28 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 </head>
 <body>
+
+    <!-- trying to make an indicator -->
+    <header class="fixed-top position-fixed z-1 w-100">
+
+        <div class="container-fluid px-0">
+            <div class="row">
+
+                <div id="--indicator-con">
+                    <div id="--indicatorItSelf"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
     
     <main>
 
@@ -26,19 +43,17 @@
             <div id="--mainPicCon" class="row d-flex align-items-center">
 
                 <div class="col-md-7 col-12">
-                    <h1 id="--h1FirstCon" class="text-white">رایان تکنولوژی نتورک</h1>
-                    <div id="--mainImgCon" class="col-12 mt-5 mb-3 mx-auto d-md-none d-flex">
+                    <h1 id="--h1FirstCon" class="text-white animate__animated animate__fadeInDownBig z-3">رایان تکنولوژی نتورک</h1>
+                    <div id="--mainImgCon" class="col-12 mt-5 mb-3 mx-auto d-md-none d-flex animate__animated animate__fadeIn z-0">
                         <img class="img-fluid rounded-md-end-5 rounded-4" src="img/1.jpg" alt="beautiful picture from a computer"/>
                     </div>
-                    <p id="--abutUsText" class="text-white col-md-12 col-11 mx-auto --typing-effect">
-                        
-                    </p>
+                    <p id="--abutUsText" class="text-white col-md-12 col-11 mx-auto --typing-effect animate__animated animate__fadeIn"></p>
 
-                    <button class='glowing-btn mx-md-0 mx-auto d-flex mt-md-0 mt-4'><span class='glowing-txt'>خ<span class='faulty-letter'>د</span>مات</span></button>
+                    <button class='glowing-btn mx-md-0 mx-auto d-flex mt-md-0 mt-5' onclick="scrollToElement('--packagesCon');"><span class='glowing-txt'>خ<span class='faulty-letter'>د</span>مات</span></button>
                 </div>
 
                 <div class="col-md-5 col-10 px-0 me-auto d-md-block d-none">
-                    <img class="img-fluid rounded-end-5" src="img/1.jpg" alt="beautiful picture from a computer"/>
+                    <img class="img-fluid rounded-end-5 animate__animated animate__fadeIn z-0" src="img/1.jpg" alt="beautiful picture from a computer"/>
                 </div>
 
             </div>
@@ -49,11 +64,11 @@
         <div class="container-fluid bg-black text-white mt-5 mb-5">
             <div class="row">
 
-                <div class="--servicesEachCon col-lg-5 col-10 p-5 rounded-5 mx-auto mt-lg-0 mt-5">
+                <div class="--servicesEachCon col-lg-5 col-10 p-5 rounded-5 mx-auto mt-lg-0 mt-5 --onHover1--">
                     <img class="img-fluid float-md-start d-flex justify-content-center mx-auto" src="img//html.png" alt="html icon"/>
                     <h4 class="pt-3 text-md-end text-center mx-auto">طراحی لندیگ پیج</h4>
                 </div>
-                <div class="--servicesEachCon col-lg-5 col-10 p-5 rounded-5 mx-auto mt-lg-0 mt-5">
+                <div class="--servicesEachCon col-lg-5 col-10 p-5 rounded-5 mx-auto mt-lg-0 mt-5 --onHover1--">
                     <img class="img-fluid float-md-start d-flex justify-content-center mx-auto" src="img/wordpress.png" alt="wprdpress icon"/>
                     <h4 class="pt-3 text-md-end text-center mx-auto">ساخت فروشگاه وردپرسی</h4>
                 </div>
@@ -69,7 +84,7 @@
                 <h2 id="--whyUsMainTitle" class="mt-5 col-11 mx-auto mb-3 text-center" style="height: 40px;">اما سوال اینه که چرا <span id="changing-word"></span> ؟ </h2>
                 <p id="--whyUsText" class="fs-5 col-11 text-justify mx-auto">شرکت های طراحی وب سایت معمولا فقط برای شما وب سایت رو طراحی میکنن! اما رایان تکنولوژی نتورک تمام تلاشش روی اینه که شما تمام کارهاتونو فقط به یک شرکت بسنده کنین.</p>
 
-                <div id="--otherComp" class="col-lg-4 col-md-5 col-11 mx-auto pb-5 rounded-5 mt-5">
+                <div id="--otherComp" class="col-lg-4 col-md-5 col-11 mx-auto pb-5 rounded-5 mt-5 --onHover--">
                     <p id="--titleOtherComp" class="d-inline p-3 rounded-5"><b>بیشتر شرکت های طراحی وب سایت</b></p>
                     <div class="mt-5 px-3">
                         <p>
@@ -99,7 +114,7 @@
                     </div>
                 </div>
 
-                <div id="--ourComp" class="col-lg-4 col-md-5 col-11 mx-auto pb-5 rounded-5 mt-5">
+                <div id="--ourComp" class="col-lg-4 col-md-5 col-11 mx-auto pb-5 rounded-5 mt-5 --onHover--">
                     <p id="--titleOurComp" class="bg-black d-inline p-3 rounded-5"><b>رایان تکنولوژی نتورک</b></p>
                     <div class="mt-5 px-3">
                         <p>
@@ -158,6 +173,68 @@
         </div>
 
 
+        <!-- packages -->
+        <div class="container-fluid text-white px-5">
+            <div id="--packagesCon" class="row text-center d-flex justify-content-center mt-5 pt-5">
+                <h2 class="text-center">پکیچ های ما!</h2>
+                <p class="text-white-50 mb-5">این پکیچ ها برای راحتیه انتخاب شما فراهم شده</p>
+
+                <div class="col-lg-4 col-md-6 col-12 rounded-5 --packagesEachCon1 --onHover2--">
+                    <h3 class="pt-3">بنفش کم رنگ</h3>
+                    <ul class="text-end py-2">
+                        <li class="py-2">طراحی و ساخت لندیگ پیچ</li>
+                        <li class="py-2">بالا اوردن صحفات اجتماعی</li>
+                        <li class="py-2">سئو ابتدایی</li>
+                    </ul>
+
+                    <hr/>
+                    <div class="text-white-50 --moreInfoCons" onclick="toggleTextAndRotate(1)">
+                        <p class="d-inline">اطلاعات بیشتر</p>
+                        <img id="--moreInfoIcon1" class="img-fluid" src="img/moreInfo.png" alt="arrow icon"/>
+                    </div>
+                    <p id="--moreInfoText1" style="display: none;">this is for suckers whom are gonna get weried</p>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 rounded-5 --packagesEachCon2 --onHover2--">
+                    <h3 class="pt-3">بنفش پر رنگ</h3>
+                    <ul class="text-end py-2">
+                        <li class="py-2">ساخت فروشگاه وردپرسی</li>
+                        <li class="py-2">عکس برداری از محصولات</li>
+                        <li class="py-2">سئو</li>
+                    </ul>
+
+                    <hr/>
+                    <div class="text-white-50 --moreInfoCons" onclick="toggleTextAndRotate(2)">
+                        <p class="d-inline">اطلاعات بیشتر</p>
+                        <img id="--moreInfoIcon2" class="img-fluid" src="img/moreInfo.png" alt="arrow icon"/>
+                    </div>
+                    <p id="--moreInfoText2" style="display: none;">this is for suckers whom are gonna get weried</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 rounded-5 --packagesEachCon3 --onHover2--">
+                    <h3 class="pt-3">بنفش خیلی پر رنگ!</h3>
+                    <ul class="text-end py-2">
+                        <li class="py-2">ساخت فروشگاه وردپرسی</li>
+                        <li class="py-2">عکس برداری از محصولات</li>
+                        <li class="py-2">وصل کردن سایت به سرویس های حساب داری</li>
+                        <li class="py-2">راه اندازی سیستم هوشمند خرید و فروش</li>
+                        <li class="py-2">سئو</li>
+                    </ul>
+
+                    <hr/>
+                    <div class="text-white-50 pb-3 --moreInfoCons" onclick="toggleTextAndRotate(3)">
+                        <p class="d-inline">اطلاعات بیشتر</p>
+                        <img id="--moreInfoIcon3" class="img-fluid" src="img/moreInfo.png" alt="arrow icon"/>
+                    </div>
+                    <p id="--moreInfoText3" style="display: none;">this is for suckers whom are gonna get weried</p>
+                </div>
+
+                <div class="w-100"></div>
+                <P class="text-center text-white-50 mt-5">برای اطلاع بیشتر و قیمت ها با شماره های زیر تماس بگیرد.</P>
+
+            </div>
+        </div>
+
+
         <!-- contact us -->
         <div class="container-fluid mt-5 pt-5 text-white">
             <div id="--contactUsCon" class="row p-5 py-0">
@@ -166,9 +243,9 @@
                 <div class="w-100"></div>
                 <img class="img-fluid col-md-6 col-12 mx-auto my-5" src="img/contactUs.PNG" alt="iphone phone call picture"/>
                 <div class="w-100"></div>
-                <div id="--contactUsInfoCon" class="text-center mx-auto col-lg-3 col-md-6 col-12 rounded-top-5 py-2">
-                    <a href="tel:028934934"><img class="img-fluid px-3 pt-2" src="img/call.png" alt="call icon"/></a>
-                    <a href="sms:+9809876746"><img class="img-fluid px-3 pt-2" src="img/message.png" alt="message icon"/></a>
+                <div id="--contactUsInfoCon" class="text-center mx-auto col-lg-3 col-md-6 col-10 rounded-top-5 py-2">
+                    <a href="tel:028934934"><img class="img-fluid px-3 pt-2" src="img/call1.png" alt="call icon"/></a>
+                    <a href="sms:+9809876746"><img class="img-fluid px-3 pt-2" src="img/message1.png" alt="message icon"/></a>
                 </div>
 
             </div>

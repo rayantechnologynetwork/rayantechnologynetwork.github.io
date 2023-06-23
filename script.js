@@ -81,6 +81,39 @@ const typingEffect1 = () => {
 typingEffect1();
 
 
+// scroll indicator - when the user has scrolled
+window.onscroll = function() {indicator()};
+
+function indicator() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("--indicatorItSelf").style.width = scrolled + "%";
+} 
+
+
+// to scroll to an specific element/container 
+function scrollToElement(elementId) {
+  var targetElement = document.getElementById(elementId);
+  if (targetElement) {
+      window.scrollTo({ top: targetElement.offsetTop });
+  }
+}
+
+
+// packages section - more info 
+function toggleTextAndRotate(section) {
+  var hiddenText = document.getElementById("--moreInfoText" + section);
+  var rotateImg = document.getElementById("--moreInfoIcon" + section);
+  hiddenText.style.display = hiddenText.style.display === "none" ? "block" : "none";
+  if(hiddenText.style.display === 'none') {
+    rotateImg.classList.remove("rotate2");
+    rotateImg.classList.add("rotate1");
+  } else {
+    rotateImg.classList.remove("rotate1");
+    rotateImg.classList.add("rotate2");
+  }
+}
 
 
 
