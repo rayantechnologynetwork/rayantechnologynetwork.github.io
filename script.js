@@ -117,4 +117,33 @@ function toggleTextAndRotate(section) {
 
 
 
+// animation - when the user has reached the content
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function showElementsAnimation() {
+  var element1 = document.getElementById("--otherComp");
+  if (isElementInViewport(element1)) {
+    element1.classList.add("visible", "animate__animated", "animate__fadeInRight");
+  }
+
+  var element2 = document.getElementById("--ourComp");
+  if (isElementInViewport(element2)) {
+    element2.classList.add("visible", "animate__animated", "animate__fadeInLeft");
+  }
+
+}
+
+window.addEventListener("scroll", showElementsAnimation);
+window.addEventListener("load", showElementsAnimation);
+
+
+
 

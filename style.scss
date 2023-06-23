@@ -284,6 +284,7 @@ html, body {
 
 #--otherComp {
   box-shadow: inset 0 0 10px $main__purple;
+  opacity: 0;
 }
 
 #--titleOtherComp {
@@ -292,6 +293,7 @@ html, body {
 
 #--ourComp {
   background: $main__purple !important;
+  opacity: 0;
 }
 
 #--titleOurComp {
@@ -432,5 +434,9 @@ html, body {
 
 .--onHover2--:hover {
   margin-top: 50px;
+}
+
+.visible {
+  opacity: 1 !important;
 }
 

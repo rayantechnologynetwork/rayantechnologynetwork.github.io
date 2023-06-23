@@ -190,13 +190,15 @@ html, body {
   text-align: justify; }
 
 #--otherComp {
-  box-shadow: inset 0 0 10px #8E2DE2; }
+  box-shadow: inset 0 0 10px #8E2DE2;
+  opacity: 0; }
 
 #--titleOtherComp {
   background: #8E2DE2 !important; }
 
 #--ourComp {
-  background: #8E2DE2 !important; }
+  background: #8E2DE2 !important;
+  opacity: 0; }
 
 #--titleOurComp {
   border: 3px solid #8E2DE2; }
@@ -299,5 +301,8 @@ html, body {
 
 .--onHover2--:hover {
   margin-top: 50px; }
+
+.visible {
+  opacity: 1 !important; }
 
 /*# sourceMappingURL=style.css.map */
