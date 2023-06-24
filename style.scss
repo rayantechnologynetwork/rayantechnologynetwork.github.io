@@ -352,6 +352,11 @@ html, body {
   opacity: 1;
 }
 
+.--ourWorkTextOverlay a {
+  background-color: $main__purple;
+  color: black;
+}
+
 
 /********* packages **********/
 .--packagesEachCon1, .--packagesEachCon2, .--packagesEachCon3 {
@@ -368,6 +373,10 @@ html, body {
   100% {
     box-shadow: -1px -1px 20px 10px rgb(0, 0, 0);
   }
+}
+
+#--moreInfoText1, #--moreInfoText2, #--moreInfoText3 {
+  text-align: justify;
 }
 
 .--packagesEachCon1 {

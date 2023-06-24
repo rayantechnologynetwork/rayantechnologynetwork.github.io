@@ -242,6 +242,10 @@ html, body {
 .slick-current {
   opacity: 1; }
 
+.--ourWorkTextOverlay a {
+  background-color: #8E2DE2;
+  color: black; }
+
 /********* packages **********/
 .--packagesEachCon1, .--packagesEachCon2, .--packagesEachCon3 {
   animation: boxShadower 2s ease-in-out infinite; }
@@ -253,6 +257,9 @@ html, body {
     box-shadow: -1px -1px 20px 10px #111111; }
   100% {
     box-shadow: -1px -1px 20px 10px black; } }
+#--moreInfoText1, #--moreInfoText2, #--moreInfoText3 {
+  text-align: justify; }
+
 .--packagesEachCon1 {
   background-color: #902ad8; }
 
