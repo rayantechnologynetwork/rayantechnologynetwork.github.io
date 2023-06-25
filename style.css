@@ -211,7 +211,6 @@ html, body {
   box-sizing: border-box; }
 
 .slider {
-  width: 90% !important;
   margin: 100px auto; }
 
 @media only screen and (max-width: 700px) {
